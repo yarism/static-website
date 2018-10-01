@@ -1,0 +1,455 @@
+body {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: #FBFBFB;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-bottom: 55px;
+}
+
+h1 {
+  margin: 16px 0;
+  color: #646466;
+  font-size: 28px;
+}
+
+h2 {
+  margin: 12px 0;
+  color: #646466;
+  font-size: 24px;
+  float: left;
+  width: 100%;
+}
+
+h3, h4, h5, h6 {
+  color: #646466;
+}
+
+a {
+  color: #399;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+      font-size: 18px;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #efefef;
+  float: left;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #E6E6E6;
+  background-color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+footer a {
+  font-size: 16px;
+}
+
+.language__header {
+  text-align: right; 
+  font-size: 16px; 
+  background-color: #399;
+}
+
+.language__header a {
+  color: white;
+}
+
+.logo {
+  float: left;
+  padding-top: 5px;
+}
+
+.logo img {
+  height: 70px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  float: left;
+  font-size: 24px;
+  padding: 24px 20px;
+}
+
+nav li a.selected {
+  background-color: #399;
+  color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .logo {
+    width: 65px;
+    overflow: hidden;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  nav li a {
+    font-size: 18px;
+    padding: 19px 12px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .logo {
+    width: 52px;
+    overflow: hidden;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  nav ul {
+    float: left;
+    margin-left: 13px;
+  }
+
+  nav li a {
+    font-size: 14px;
+    padding: 16px 6px;
+  }
+}
+
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pageContainer {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 168px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container--small {
+      width: 700px;
+  }
+}
+
+.textContainer {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.textContainer p {
+  float: left;
+  width: 65%;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .textContainer p {
+    width: 100%;
+  }
+}
+
+.hero {
+  background: url('/images/hero.jpg') no-repeat center center fixed;
+  background-size:cover;
+  height: 620px;
+  float: left;
+  width: 100%;
+}
+
+.hero__info {
+  float: left;
+  margin-top: 290px;
+}
+
+.hero__info h1 {
+  font-size: 40px;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 460px;
+  }
+  .hero__info {
+    margin-top: 130px;
+  }
+  .hero__info h1 {
+    font-size: 26px;
+  }
+}
+
+.button {
+  padding: 0;
+  background-color: #339999;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  color: white;
+  display: inline-block;
+}
+
+.button:hover {
+    background-color: #3ab2b2;
+    cursor: pointer;
+}
+
+.button span {
+  padding: 20px 25px;
+  font: 700 13px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all 350ms ease;
+  -moz-transition: all 350ms ease;
+  -o-transition: all 350ms ease;
+  transition: all 350ms ease;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .button span {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+
+.image__container {
+  text-align: center;
+  margin-top: 20px;
+  width: 300px;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .image__container {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.image__container img {
+  width: 100%;
+}
+
+.customers__list {
+  margin-top: 40px;
+  float: left;
+  width: 100%;
+}
+
+.customers__list li {
+  float: left;
+  width: 33%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.customers__list img {
+  height: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .customers__list li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .customers__list img {
+    height: 50px;
+  }
+}
+
+.employees__list {
+  margin-top: 80px;
+  float: left;
+  width: 100%;
+}
+
+.employees__list li {
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.employees__list img {
+  height: 340px;
+}
+
+.employees__list p {
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.employee__contact__list {
+
+}
+
+.employee__contact__list li {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.employee__contact__list li a {
+  font-size: 16px;
+}
+
+.con_block_ends {
+  position: relative;
+  height: 210px;
+  float: left;
+  width: 24%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.map_img {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 80px;
+}
+
+.icon_position_dir {
+  margin-top: 95px;
+  margin-left: -102px;
+  border: none;
+  width: 54px;
+  opacity: 1;
+  position: absolute;
+  border: none;
+}
+
+.list {
+  padding: 20px;
+}
+
+.list li {
+  list-style-type: disc;
+  font-size: 20px;
+}
+
+.contact__list {
+  float: left;
+  width: 500px;
+  margin-left: 32px;
+  margin-top: 70px;
+}
+
+.contact__list li {
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+
+.contact__list .fa {
+  font-size: 120px;
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .con_block_ends {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact__list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .employees__list li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .contact__list {
+    margin-top: 40px;
+  }
+
+  .contact__list li {
+    width: 100%;
+  }
+
+  .contact__list .fa {
+    font-size: 60px;
+  }
+
+  .employees__list {
+    margin-top: 30px;
+  }
+}

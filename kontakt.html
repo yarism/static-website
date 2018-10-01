@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MMD Consulting</title>
+	<meta name="description" content="MMD Consulting">
+	<link rel="stylesheet" href="base.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://use.fontawesome.com/9ef452a79f.js"></script>
+	<script src="https://instantcm.com/js/v2/latest/txt-min.js"></script>
+	<script>
+		var options = {
+			id: "d2ffa75e-642e-4568-b3a6-68675fb5ab4a"
+		};
+		Txt.render(options);
+	</script>
+</head>
+
+<body>
+  	<header>
+		<div class="container">
+			<a class="logo" href="/">
+				<img src="/images/logo.png">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="/">Start</a></li>
+					<li><a href="/verksamhet.html">Verksamhet</a></li>
+					<li><a href="/kontakt.html" class="selected">Kontakt</a></li>
+					<li><a href="/en/contact.html">English</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="pageContainer">
+		<div class="container container--small">
+			<h1>Kontakta MMD Consulting AB</h1>
+			<div class="con_block_ends" style="clear:both">
+                <img class="map_img" src="images/map.svg">
+                <a href="https://www.google.com/maps/dir//Stora+Åvägen+21,+436+34+Askim,+Sweden/@57.6410978,11.9532039,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x464ff28a2b71dafb:0xa15707ce02b89eab!2m2!1d11.9575813!2d57.6410979?hl=en" target="_blank"><img class="icon_position_dir" src="images/direction.svg"></a>
+                <a href="https://www.google.com/maps/dir//Stora+Åvägen+21,+436+34+Askim,+Sweden/@57.6410978,11.9532039,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x464ff28a2b71dafb:0xa15707ce02b89eab!2m2!1d11.9575813!2d57.6410979?hl=en" target="_blank"><p class="icon_info_dir">Stora åvägen 21<br>436 34 ASKIM</p></a>
+            </div>
+            <ul class="contact__list">
+            	<li>
+            		<a href="mailto:info@mmdconsulting.se"><i class="fa fa-envelope"></i> info@mmdconsulting.se</a>
+            	</li>
+            	<li>
+					<a href="tel:4631691900"><i class="fa fa-phone"></i> +46 31 69 19 00</a>
+            	</li>
+            </ul>
+			<div ng-app="myApp" ng-controller="employeesCtrl">
+				<ul class="employees__list" ng-if="employees.length">
+					<li ng-repeat="employee in employees | orderBy: 'fields.name'">
+						<img src="{{employee.fields.image.fields.file.url}}">
+						<h3>{{employee.fields.name}}</h3>
+						<ul class="employee__contact__list">
+							<li><a href="tel:{{employee.fields.phone.split(' ').join('')}}">+{{employee.fields.phone}}</a></h4></li>
+							<li><a href="mailto:{{employee.fields.email}}">{{employee.fields.email}}</a></h4></li>
+						</ul>
+						<p>{{employee.fields.description}}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		MMD Consulting AB | <a href="https://www.google.com/maps/dir//Stora+Åvägen+21,+436+34+Askim,+Sweden/@57.6410978,11.9532039,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x464ff28a2b71dafb:0xa15707ce02b89eab!2m2!1d11.9575813!2d57.6410979?hl=en" target="_blank">Stora Åvägen 21, 436 34 ASKIM</a>
+		| <a href="tel:4631691900">+46 31 69 19 00</a>
+	</footer>
+	<script src="https://unpkg.com/contentful@latest/dist/contentful.min.js"></script>
+	<script src="employees.js"></script>
+</body>
+</html>

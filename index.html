@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MMD Consulting</title>
+	<meta name="description" content="MMD Consulting">
+	<link rel="stylesheet" href="base.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://instantcm.com/js/v2/latest/txt-min.js"></script>
+	<script>
+		var options = {
+			id: "d2ffa75e-642e-4568-b3a6-68675fb5ab4a"
+		};
+		Txt.render(options);
+	</script>
+</head>
+
+<body>
+  	<header>
+		<!-- div class="language__header">
+			<div class="container">
+				<a href="/en/verksamhet">English</a>
+			</div>
+		</div -->
+
+		<div class="container">
+			<a class="logo" href="/">
+				<img src="/images/logo.png">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="/" class="selected">Start</a></li>
+					<li><a href="/verksamhet.html">Verksamhet</a></li>
+					<li><a href="/kontakt.html">Kontakt</a></li>
+					<li><a href="/en/">English</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="hero">
+		<div class="container container--small">
+			<div class="hero__info">
+				<h1>Vi skapar <span style="text-decoration: underline;text-decoration-color: #339999;">unika</span> organisationer</h1>
+				<a class="button" href="/verksamhet"><span>Unikt?</span></a>
+			</div>
+		</div>
+	</div>
+	<!-- div class="pageContainer">
+		<div class="container container--small">
+			<div ng-app="myApp" ng-controller="customersCtrl">
+				<ul class="customers__list" ng-if="customers.length">
+					<li ng-repeat="customer in customers | orderBy: 'fields.name'">
+						<img src="{{customer.fields.image.fields.file.url}}">
+					</li><li ng-repeat="customer in customers | orderBy: 'fields.name'">
+						<img src="{{customer.fields.image.fields.file.url}}">
+					</li><li ng-repeat="customer in customers | orderBy: 'fields.name'">
+						<img src="{{customer.fields.image.fields.file.url}}">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div -->
+	<footer>
+		MMD Consulting AB | <a href="https://www.google.com/maps/dir//Stora+Åvägen+21,+436+34+Askim,+Sweden/@57.6410978,11.9532039,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x464ff28a2b71dafb:0xa15707ce02b89eab!2m2!1d11.9575813!2d57.6410979?hl=en" target="_blank">Stora Åvägen 21, 436 34 ASKIM</a>
+		| <a href="tel:4631691900">+46 31 69 19 00</a>
+	</footer>
+	<script src="https://unpkg.com/contentful@latest/dist/contentful.min.js"></script>
+	<script src="customers.js"></script>
+</body>
+</html>

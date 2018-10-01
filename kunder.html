@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MMD Consulting</title>
+  <meta name="description" content="MMD Consulting">
+  <link rel="stylesheet" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body>
+  	<header>
+		<div class="container">
+			<a class="logo" href="/">
+				<img src="/images/logo.png">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="/">Start</a></li>
+					<li><a href="/verksamhet.html">Verksamhet</a></li>
+					<li><a href="/kunder.html" class="selected">Kunder</a></li>
+					<li><a href="/kontakt.html">Kontakt</a></li>
+					<li><a href="/en/">English</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="pageContainer">
+		<div class="container container--small">
+			<div ng-app="myApp" ng-controller="customersCtrl">
+				<ul class="customers__list">
+					<li ng-repeat="customer in customers | orderBy: 'fields.name'">
+						<img src="{{customer.fields.image.fields.file.url}}">
+					</li><li ng-repeat="customer in customers | orderBy: 'fields.name'">
+						<img src="{{customer.fields.image.fields.file.url}}">
+					</li><li ng-repeat="customer in customers | orderBy: 'fields.name'">
+						<img src="{{customer.fields.image.fields.file.url}}">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/contentful@latest/dist/contentful.min.js"></script>
+	<script src="customers.js"></script>
+</body>
+</html>
